@@ -1,0 +1,45 @@
+
+/* Class = "NSMenuItem"; title = "TUfast TU Dresden"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "TUfast TU Dresden";
+
+/* Class = "NSMenuItem"; title = "Quit TUfast TU Dresden"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Beende TUfast TU Dresden";
+
+/* Class = "NSMenuItem"; title = "About TUfast TU Dresden"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "Über TUfast TU Dresden";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Hauptmenü";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
+"F2S-fz-NVQ.title" = "Hilfe";
+
+/* Class = "NSMenuItem"; title = "TUfast TU Dresden Help"; ObjectID = "FKE-Sm-Kum"; */
+"FKE-Sm-Kum.title" = "TUfast TU Dresden Hilfe";
+
+/* Class = "NSWindow"; title = "TUfast TU Dresden"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "TUfast TU Dresden";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "Zeige alle";
+
+/* Class = "NSMenuItem"; title = "Hide TUfast TU Dresden"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Verstecke TUfast TU Dresden";
+
+/* Class = "NSTextFieldCell"; title = "App Name's extension is currently off. You can turn it on in Safari Extensions preferences."; ObjectID = "S7v-7o-3vW"; */
+"S7v-7o-3vW.title" = "TUfast's Erweiterung ist momentan deaktiviert. Du kannst sie in den Safari Erweiterungen Einstellungen aktivieren.";
+
+/* Class = "NSButtonCell"; alternateTitle = "Install"; ObjectID = "Srx-0j-A4D"; */
+"Srx-0j-A4D.alternateTitle" = "Installieren";
+
+/* Class = "NSButtonCell"; title = "Quit and Open Safari Extensions Preferences…"; ObjectID = "Srx-0j-A4D"; */
+"Srx-0j-A4D.title" = "Beenden und Safari Erweiterungen Einstellungen öffnen…";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "Andere verstecken";
+
+/* Class = "NSMenu"; title = "TUfast TU Dresden"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "TUfast TU Dresden";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
+"wpr-3q-Mcd.title" = "Hilfe";

@@ -27,9 +27,9 @@ class ViewController: NSViewController {
 
             DispatchQueue.main.async {
                 if (state.isEnabled) {
-                    self.appNameLabel.stringValue = "\(appName)'s extension is currently on."
+                    self.appNameLabel.stringValue = "\(appName)'s " + NSLocalizedString("extCurrOn", comment: "")
                 } else {
-                    self.appNameLabel.stringValue = "\(appName)'s extension is currently off. You can turn it on in Safari Extensions preferences."
+                    self.appNameLabel.stringValue = "\(appName)'s " + NSLocalizedString("extCurrOff", comment: "")
                 }
             }
         }

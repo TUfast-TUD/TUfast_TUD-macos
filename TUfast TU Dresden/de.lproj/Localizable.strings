@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  TUfast TU Dresden
+
+  Created by Julius Schmidt on 20.12.20.
+  
+*/
+
+"extCurrOn" = "Erweiterung ist momentan aktiviert.";
+"extCurrOff" = "Erweiterung ist momentan deaktiviert. Du kannst sie in den Safari Erweiterungen Einstellungen aktivieren.";
