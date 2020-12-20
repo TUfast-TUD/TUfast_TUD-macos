@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44031AD0258F7E630004FF59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44031ACF258F7E630004FF59 /* AppDelegate.swift */; };
+		44031AD3258F7E630004FF59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44031AD1258F7E630004FF59 /* Main.storyboard */; };
+		44031AD5258F7E630004FF59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44031AD4258F7E630004FF59 /* ViewController.swift */; };
+		44031AD7258F7E640004FF59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44031AD6258F7E640004FF59 /* Assets.xcassets */; };
+		44031ADE258F7E640004FF59 /* TUfast TU Dresden Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 44031ADD258F7E640004FF59 /* TUfast TU Dresden Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		44031AE3258F7E640004FF59 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44031AE2258F7E640004FF59 /* Cocoa.framework */; };
+		44031AE6258F7E640004FF59 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44031AE5258F7E640004FF59 /* SafariWebExtensionHandler.swift */; };
+		44031B06258F7E650004FF59 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 44031AF3258F7E650004FF59 /* popup.js */; };
+		44031B07258F7E650004FF59 /* contentScriptsDashboard in Resources */ = {isa = PBXBuildFile; fileRef = 44031AF4258F7E650004FF59 /* contentScriptsDashboard */; };
+		44031B08258F7E650004FF59 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 44031AF5258F7E650004FF59 /* background.js */; };
+		44031B09258F7E650004FF59 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 44031AF6258F7E650004FF59 /* images */; };
+		44031B0A258F7E650004FF59 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 44031AF7258F7E650004FF59 /* popup.html */; };
+		44031B0B258F7E650004FF59 /* settings.css in Resources */ = {isa = PBXBuildFile; fileRef = 44031AF8258F7E650004FF59 /* settings.css */; };
+		44031B0D258F7E650004FF59 /* updatePermission.css in Resources */ = {isa = PBXBuildFile; fileRef = 44031AFA258F7E650004FF59 /* updatePermission.css */; };
+		44031B0E258F7E650004FF59 /* contentScripts in Resources */ = {isa = PBXBuildFile; fileRef = 44031AFB258F7E650004FF59 /* contentScripts */; };
+		44031B0F258F7E650004FF59 /* updatePermissions.html in Resources */ = {isa = PBXBuildFile; fileRef = 44031AFC258F7E650004FF59 /* updatePermissions.html */; };
+		44031B10258F7E650004FF59 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 44031AFD258F7E650004FF59 /* icons */; };
+		44031B11258F7E650004FF59 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 44031AFE258F7E650004FF59 /* manifest.json */; };
+		44031B12258F7E650004FF59 /* updatePermissions.js in Resources */ = {isa = PBXBuildFile; fileRef = 44031AFF258F7E650004FF59 /* updatePermissions.js */; };
+		44031B13258F7E650004FF59 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 44031B00258F7E650004FF59 /* popup.css */; };
+		44031B14258F7E650004FF59 /* settings.html in Resources */ = {isa = PBXBuildFile; fileRef = 44031B01258F7E650004FF59 /* settings.html */; };
+		44031B15258F7E650004FF59 /* switch.css in Resources */ = {isa = PBXBuildFile; fileRef = 44031B02258F7E650004FF59 /* switch.css */; };
+		44031B16258F7E650004FF59 /* thirdParty in Resources */ = {isa = PBXBuildFile; fileRef = 44031B03258F7E650004FF59 /* thirdParty */; };
+		44031B17258F7E650004FF59 /* settings.js in Resources */ = {isa = PBXBuildFile; fileRef = 44031B04258F7E650004FF59 /* settings.js */; };
+		44031B18258F7E650004FF59 /* root.css in Resources */ = {isa = PBXBuildFile; fileRef = 44031B05258F7E650004FF59 /* root.css */; };
+		44233C53258F8687002662EF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44233C55258F8687002662EF /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44031ADF258F7E640004FF59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44031AC3258F7E630004FF59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44031ADC258F7E640004FF59;
+			remoteInfo = "TUfast TU Dresden Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		44031AEE258F7E640004FF59 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				44031ADE258F7E640004FF59 /* TUfast TU Dresden Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		44031ACB258F7E630004FF59 /* TUfast TU Dresden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TUfast TU Dresden.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44031ACE258F7E630004FF59 /* TUfast_TU_Dresden.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TUfast_TU_Dresden.entitlements; sourceTree = "<group>"; };
+		44031ACF258F7E630004FF59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44031AD2258F7E630004FF59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44031AD4258F7E630004FF59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44031AD6258F7E640004FF59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44031AD8258F7E640004FF59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44031ADD258F7E640004FF59 /* TUfast TU Dresden Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TUfast TU Dresden Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44031AE2258F7E640004FF59 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		44031AE5258F7E640004FF59 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		44031AE7258F7E640004FF59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44031AE8258F7E640004FF59 /* TUfast_TU_Dresden_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TUfast_TU_Dresden_Extension.entitlements; sourceTree = "<group>"; };
+		44031AF3258F7E650004FF59 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = ../../../TUfast_TUD/popup.js; sourceTree = "<group>"; };
+		44031AF4258F7E650004FF59 /* contentScriptsDashboard */ = {isa = PBXFileReference; lastKnownFileType = folder; name = contentScriptsDashboard; path = ../../../TUfast_TUD/contentScriptsDashboard; sourceTree = "<group>"; };
+		44031AF5258F7E650004FF59 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../../TUfast_TUD/background.js; sourceTree = "<group>"; };
+		44031AF6258F7E650004FF59 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = ../../../TUfast_TUD/images; sourceTree = "<group>"; };
+		44031AF7258F7E650004FF59 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = ../../../TUfast_TUD/popup.html; sourceTree = "<group>"; };
+		44031AF8258F7E650004FF59 /* settings.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = settings.css; path = ../../../TUfast_TUD/settings.css; sourceTree = "<group>"; };
+		44031AF9258F7E650004FF59 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../TUfast_TUD/README.md; sourceTree = "<group>"; };
+		44031AFA258F7E650004FF59 /* updatePermission.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = updatePermission.css; path = ../../../TUfast_TUD/updatePermission.css; sourceTree = "<group>"; };
+		44031AFB258F7E650004FF59 /* contentScripts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = contentScripts; path = ../../../TUfast_TUD/contentScripts; sourceTree = "<group>"; };
+		44031AFC258F7E650004FF59 /* updatePermissions.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = updatePermissions.html; path = ../../../TUfast_TUD/updatePermissions.html; sourceTree = "<group>"; };
+		44031AFD258F7E650004FF59 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../../TUfast_TUD/icons; sourceTree = "<group>"; };
+		44031AFE258F7E650004FF59 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../TUfast_TUD/manifest.json; sourceTree = "<group>"; };
+		44031AFF258F7E650004FF59 /* updatePermissions.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = updatePermissions.js; path = ../../../TUfast_TUD/updatePermissions.js; sourceTree = "<group>"; };
+		44031B00258F7E650004FF59 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = popup.css; path = ../../../TUfast_TUD/popup.css; sourceTree = "<group>"; };
+		44031B01258F7E650004FF59 /* settings.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = settings.html; path = ../../../TUfast_TUD/settings.html; sourceTree = "<group>"; };
+		44031B02258F7E650004FF59 /* switch.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = switch.css; path = ../../../TUfast_TUD/switch.css; sourceTree = "<group>"; };
+		44031B03258F7E650004FF59 /* thirdParty */ = {isa = PBXFileReference; lastKnownFileType = folder; name = thirdParty; path = ../../../TUfast_TUD/thirdParty; sourceTree = "<group>"; };
+		44031B04258F7E650004FF59 /* settings.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = settings.js; path = ../../../TUfast_TUD/settings.js; sourceTree = "<group>"; };
+		44031B05258F7E650004FF59 /* root.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = root.css; path = ../../../TUfast_TUD/root.css; sourceTree = "<group>"; };
+		44233C37258F840C002662EF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		44233C54258F8687002662EF /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		44233C58258F87D0002662EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44031AC8258F7E630004FF59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44031ADA258F7E640004FF59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44031AE3258F7E640004FF59 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44031AC2258F7E630004FF59 = {
+			isa = PBXGroup;
+			children = (
+				44031ACD258F7E630004FF59 /* TUfast TU Dresden */,
+				44031AE4258F7E640004FF59 /* TUfast TU Dresden Extension */,
+				44031AE1258F7E640004FF59 /* Frameworks */,
+				44031ACC258F7E630004FF59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44031ACC258F7E630004FF59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44031ACB258F7E630004FF59 /* TUfast TU Dresden.app */,
+				44031ADD258F7E640004FF59 /* TUfast TU Dresden Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44031ACD258F7E630004FF59 /* TUfast TU Dresden */ = {
+			isa = PBXGroup;
+			children = (
+				44031ACE258F7E630004FF59 /* TUfast_TU_Dresden.entitlements */,
+				44031ACF258F7E630004FF59 /* AppDelegate.swift */,
+				44031AD1258F7E630004FF59 /* Main.storyboard */,
+				44031AD4258F7E630004FF59 /* ViewController.swift */,
+				44031AD6258F7E640004FF59 /* Assets.xcassets */,
+				44233C55258F8687002662EF /* Localizable.strings */,
+				44031AD8258F7E640004FF59 /* Info.plist */,
+			);
+			path = "TUfast TU Dresden";
+			sourceTree = "<group>";
+		};
+		44031AE1258F7E640004FF59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44031AE2258F7E640004FF59 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44031AE4258F7E640004FF59 /* TUfast TU Dresden Extension */ = {
+			isa = PBXGroup;
+			children = (
+				44031AF2258F7E650004FF59 /* Resources */,
+				44031AE5258F7E640004FF59 /* SafariWebExtensionHandler.swift */,
+				44031AE7258F7E640004FF59 /* Info.plist */,
+				44031AE8258F7E640004FF59 /* TUfast_TU_Dresden_Extension.entitlements */,
+			);
+			path = "TUfast TU Dresden Extension";
+			sourceTree = "<group>";
+		};
+		44031AF2258F7E650004FF59 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				44031AF3258F7E650004FF59 /* popup.js */,
+				44031AF4258F7E650004FF59 /* contentScriptsDashboard */,
+				44031AF5258F7E650004FF59 /* background.js */,
+				44031AF6258F7E650004FF59 /* images */,
+				44031AF7258F7E650004FF59 /* popup.html */,
+				44031AF8258F7E650004FF59 /* settings.css */,
+				44031AF9258F7E650004FF59 /* README.md */,
+				44031AFA258F7E650004FF59 /* updatePermission.css */,
+				44031AFB258F7E650004FF59 /* contentScripts */,
+				44031AFC258F7E650004FF59 /* updatePermissions.html */,
+				44031AFD258F7E650004FF59 /* icons */,
+				44031AFE258F7E650004FF59 /* manifest.json */,
+				44031AFF258F7E650004FF59 /* updatePermissions.js */,
+				44031B00258F7E650004FF59 /* popup.css */,
+				44031B01258F7E650004FF59 /* settings.html */,
+				44031B02258F7E650004FF59 /* switch.css */,
+				44031B03258F7E650004FF59 /* thirdParty */,
+				44031B04258F7E650004FF59 /* settings.js */,
+				44031B05258F7E650004FF59 /* root.css */,
+			);
+			name = Resources;
+			path = "TUfast TU Dresden Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44031ACA258F7E630004FF59 /* TUfast TU Dresden */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44031AEF258F7E640004FF59 /* Build configuration list for PBXNativeTarget "TUfast TU Dresden" */;
+			buildPhases = (
+				44031AC7258F7E630004FF59 /* Sources */,
+				44031AC8258F7E630004FF59 /* Frameworks */,
+				44031AC9258F7E630004FF59 /* Resources */,
+				44031AEE258F7E640004FF59 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44031AE0258F7E640004FF59 /* PBXTargetDependency */,
+			);
+			name = "TUfast TU Dresden";
+			productName = "TUfast TU Dresden";
+			productReference = 44031ACB258F7E630004FF59 /* TUfast TU Dresden.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44031ADC258F7E640004FF59 /* TUfast TU Dresden Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44031AEB258F7E640004FF59 /* Build configuration list for PBXNativeTarget "TUfast TU Dresden Extension" */;
+			buildPhases = (
+				44031AD9258F7E640004FF59 /* Sources */,
+				44031ADA258F7E640004FF59 /* Frameworks */,
+				44031ADB258F7E640004FF59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TUfast TU Dresden Extension";
+			productName = "TUfast TU Dresden Extension";
+			productReference = 44031ADD258F7E640004FF59 /* TUfast TU Dresden Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44031AC3258F7E630004FF59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					44031ACA258F7E630004FF59 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					44031ADC258F7E640004FF59 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 44031AC6258F7E630004FF59 /* Build configuration list for PBXProject "TUfast TU Dresden" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+			);
+			mainGroup = 44031AC2258F7E630004FF59;
+			productRefGroup = 44031ACC258F7E630004FF59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44031ACA258F7E630004FF59 /* TUfast TU Dresden */,
+				44031ADC258F7E640004FF59 /* TUfast TU Dresden Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44031AC9258F7E630004FF59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44031AD7258F7E640004FF59 /* Assets.xcassets in Resources */,
+				44233C53258F8687002662EF /* Localizable.strings in Resources */,
+				44031AD3258F7E630004FF59 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44031ADB258F7E640004FF59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44031B10258F7E650004FF59 /* icons in Resources */,
+				44031B18258F7E650004FF59 /* root.css in Resources */,
+				44031B12258F7E650004FF59 /* updatePermissions.js in Resources */,
+				44031B0F258F7E650004FF59 /* updatePermissions.html in Resources */,
+				44031B15258F7E650004FF59 /* switch.css in Resources */,
+				44031B0E258F7E650004FF59 /* contentScripts in Resources */,
+				44031B0B258F7E650004FF59 /* settings.css in Resources */,
+				44031B11258F7E650004FF59 /* manifest.json in Resources */,
+				44031B09258F7E650004FF59 /* images in Resources */,
+				44031B0A258F7E650004FF59 /* popup.html in Resources */,
+				44031B13258F7E650004FF59 /* popup.css in Resources */,
+				44031B14258F7E650004FF59 /* settings.html in Resources */,
+				44031B17258F7E650004FF59 /* settings.js in Resources */,
+				44031B07258F7E650004FF59 /* contentScriptsDashboard in Resources */,
+				44031B08258F7E650004FF59 /* background.js in Resources */,
+				44031B16258F7E650004FF59 /* thirdParty in Resources */,
+				44031B06258F7E650004FF59 /* popup.js in Resources */,
+				44031B0D258F7E650004FF59 /* updatePermission.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44031AC7258F7E630004FF59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44031AD5258F7E630004FF59 /* ViewController.swift in Sources */,
+				44031AD0258F7E630004FF59 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44031AD9258F7E640004FF59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44031AE6258F7E640004FF59 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44031AE0258F7E640004FF59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44031ADC258F7E640004FF59 /* TUfast TU Dresden Extension */;
+			targetProxy = 44031ADF258F7E640004FF59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44031AD1258F7E630004FF59 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44031AD2258F7E630004FF59 /* Base */,
+				44233C37258F840C002662EF /* de */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		44233C55258F8687002662EF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44233C54258F8687002662EF /* de */,
+				44233C58258F87D0002662EF /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44031AE9258F7E640004FF59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44031AEA258F7E640004FF59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		44031AEC258F7E640004FF59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "TUfast TU Dresden Extension/TUfast_TU_Dresden_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "TUfast TU Dresden Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.tu-dresden.TUfast-TU-Dresden.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		44031AED258F7E640004FF59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "TUfast TU Dresden Extension/TUfast_TU_Dresden_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "TUfast TU Dresden Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.tu-dresden.TUfast-TU-Dresden.Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		44031AF0258F7E640004FF59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "TUfast TU Dresden/TUfast_TU_Dresden.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "TUfast TU Dresden/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.tu-dresden.TUfast-TU-Dresden";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		44031AF1258F7E640004FF59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "TUfast TU Dresden/TUfast_TU_Dresden.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "TUfast TU Dresden/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.tu-dresden.TUfast-TU-Dresden";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44031AC6258F7E630004FF59 /* Build configuration list for PBXProject "TUfast TU Dresden" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44031AE9258F7E640004FF59 /* Debug */,
+				44031AEA258F7E640004FF59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44031AEB258F7E640004FF59 /* Build configuration list for PBXNativeTarget "TUfast TU Dresden Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44031AEC258F7E640004FF59 /* Debug */,
+				44031AED258F7E640004FF59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44031AEF258F7E640004FF59 /* Build configuration list for PBXNativeTarget "TUfast TU Dresden" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44031AF0258F7E640004FF59 /* Debug */,
+				44031AF1258F7E640004FF59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44031AC3258F7E630004FF59 /* Project object */;
+}
