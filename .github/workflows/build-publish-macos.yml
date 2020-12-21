@@ -3,8 +3,8 @@ name: build-publish-macos
 on:
   push:
     branches: [$default-branch]
-    tags:
-      - v*
+    # tags:
+    #   - v*
 #  pull_request:
 #    branches: [ $default-branch ]
 
