@@ -10,7 +10,6 @@ on:
 #  pull_request:
 #    branches: [ $default-branch ]
 
-
 jobs:
   build:
     runs-on: macos-latest
@@ -34,7 +33,6 @@ jobs:
       PROVISION_ENCRYPTION_PWD: ${{ secrets.PROVISION_ENCRYPTION_PWD }}
       CERTS_EXPORT_PWD: ${{ secrets.CERTS_EXPORT_PWD }}
       KEYCHAIN: ${{ 'xcode.keychain' }}
-
 
     steps:
       - name: "Select latest Xcode"
@@ -71,7 +69,7 @@ jobs:
           $(which xcodebuild) archive -project "$XC_PROJECT" -scheme "$XC_SCHEME" -configuration "$XC_CONFIGURATION" -archivePath "$XC_ARCHIVE_PATH" "OTHER_CODE_SIGN_FLAGS=--keychain '$KEYCHAIN'"
       - name: Configure export options
         run: |
-          TEAM_ID=${{ XC_TEAM_ID }} DESTINATION=${{ XC_EXPORT_DESTINATION }} envsubst < ExportOptions.plist | sponge ExportOptions.plist
+          TEAM_ID=${XC_TEAM_ID} DESTINATION=${XC_EXPORT_DESTINATION} envsubst < ExportOptions.plist | sponge ExportOptions.plist
       - name: Export for App Store
         run: |
           $(which xcodebuild) -exportArchive -archivePath "$XC_ARCHIVE_PATH" -exportOptionsPlist "$XC_EXPORT_OPTIONS_FILE_PATH" -exportPath "$XC_EXPORT_PATH"
