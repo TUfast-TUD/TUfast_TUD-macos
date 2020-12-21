@@ -1,0 +1,52 @@
+name: build-publish-macos
+
+on:
+  push:
+    # branches: [$default-branch]
+    tags:
+      - v*
+#  pull_request:
+#    branches: [ $default-branch ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    env:
+      XC_VERSION: ${{ '12.3' }}
+      XC_PROJECT: ${{ 'TUfast TU Dresden.xcodeproj' }}
+      XC_SCHEME: ${{ 'TUfast TU Dresden' }}
+      XC_CONFIGURATION: ${{ 'Release' }}
+      XC_ARCHIVE_PATH: ${{ './Release.xcarchive' }}
+      XC_EXPORT_DESTINATION: ${{ 'export' }}
+      XC_EXPORT_PATH: ${{ './artifacts/' }}
+      XC_APP_NAME: ${{ 'TUfast TU Dresden.app' }}
+      XC_EXPORT_OPTIONS_FILE_PATH: ${{ './ExportOptions.plist' }}
+
+    steps:
+      - name: "Select latest Xcode"
+        run: "sudo xcode-select -s /Applications/Xcode_${XC_VERSION}.app"
+      - name: "Install utilities (sponge)"
+        run: "brew install sponge"
+      - uses: actions/setup-node@v2
+        with:
+          node_version: "14"
+      - uses: actions/checkout@v2
+      - name: Archive
+        run: |
+          mkdir artifacts
+          $(which xcodebuild) archive -project "$XC_PROJECT" -scheme "$XC_SCHEME" -configuration "$XC_CONFIGURATION" -archivePath "$XC_ARCHIVE_PATH" "OTHER_CODE_SIGN_FLAGS=--keychain '$KEYCHAIN'"
+      - name: Configure export options
+        run: |
+          TEAM_ID=${{ secrets.XC_TEAM_ID }} DESTINATION=${{ XC_EXPORT_DESTINATION }} envsubst < ExportOptions.plist | sponge ExportOptions.plist
+      - name: Export for App Store
+        run: |
+          $(which xcodebuild) -exportArchive -archivePath "$XC_ARCHIVE_PATH" -exportOptionsPlist "$XC_EXPORT_OPTIONS_FILE_PATH" -exportPath "$XC_EXPORT_PATH"
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: Artifacts
+          path: ./artifacts
+      - name: Create DMG for off-store distribution
+        run: |
+          npm create-dmg "${XC_EXPORT_PATH}${XC_APP_NAME}"
