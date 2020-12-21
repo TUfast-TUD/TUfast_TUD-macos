@@ -2,7 +2,7 @@ name: build-publish-macos
 
 on:
   push:
-    # branches: [$default-branch]
+    branches: [$default-branch]
     tags:
       - v*
 #  pull_request:
@@ -22,7 +22,17 @@ jobs:
       XC_EXPORT_DESTINATION: ${{ 'export' }}
       XC_EXPORT_PATH: ${{ './artifacts/' }}
       XC_APP_NAME: ${{ 'TUfast TU Dresden.app' }}
+      XC_TEAM_ID: ${{ secrets.XC_TEAM_ID }}
       XC_EXPORT_OPTIONS_FILE_PATH: ${{ './ExportOptions.plist' }}
+      DECRYPTED_CERTS_FILE_PATH: ${{ './certs.p12' }}
+      ENCRYPTED_CERTS_FILE_PATH: ${{ './certs.p12.gpg' }}
+      DECRYPTED_PROVISION_FILE_PATH: ${{ './provisioning.tar.gz' }}
+      ENCRYPTED_PROVISION_FILE_PATH: ${{ './provisioning.tar.gz.gpg' }}
+      CERTS_ENCRYPTION_PWD: ${{ secrets.CERTS_ENCRYPTION_PWD }}
+      PROVISION_ENCRYPTION_PWD: ${{ secrets.PROVISION_ENCRYPTION_PWD }}
+      CERTS_EXPORT_PWD: ${{ secrets.CERTS_EXPORT_PWD }}
+      KEYCHAIN: ${{ 'xcode.keychain' }}
+
 
     steps:
       - name: "Select latest Xcode"
@@ -33,13 +43,33 @@ jobs:
         with:
           node_version: "14"
       - uses: actions/checkout@v2
+      - name: Configure Keychain
+        run: |
+          security create-keychain -p "" "${KEYCHAIN}"
+          security list-keychains -s "${KEYCHAIN}"
+          security default-keychain -s "${KEYCHAIN}"
+          security unlock-keychain -p "" "${KEYCHAIN}"
+          security set-keychain-settings
+          security list-keychains
+      - name: Configure Code Signing
+        run: |
+          gpg2 -d -o "${DECRYPTED_CERTS_FILE_PATH}" --pinentry-mode=loopback --passphrase "${CERTS_ENCRYPTION_PWD}" "${ENCRYPTED_CERTS_FILE_PATH}"
+          gpg2 -d -o "${DECRYPTED_PROVISION_FILE_PATH}" --pinentry-mode=loopback --passphrase "${PROVISION_ENCRYPTION_PWD}" "${ENCRYPTED_PROVISION_FILE_PATH}"
+          security import "${DECRYPTED_CERTS_FILE_PATH}" -k "${KEYCHAIN}" -P "${CERTS_EXPORT_PWD}" -A
+          security set-key-partition-list -S apple-tool:,apple: -s -k "" "${KEYCHAIN}"
+          tar xzvf "${DECRYPTED_PROVISION_FILE_PATH}"
+          mkdir -p "${HOME}/Library/MobileDevices/Provisioning Profiles"
+          for PROVISION in `ls ./*.mobileprovision`; do
+            UUID=`/usr/libexec/PlistBuddy -c 'Print :UUID' /dev/stdin <<< $(security cms -D -i ./${PROVISION})`
+            cp "./${PROVISION}" "${HOME}/Library/MobileDevices/Provisioning Profiles/${UUID}.mobileprovision"
+          done
       - name: Archive
         run: |
           mkdir artifacts
           $(which xcodebuild) archive -project "$XC_PROJECT" -scheme "$XC_SCHEME" -configuration "$XC_CONFIGURATION" -archivePath "$XC_ARCHIVE_PATH" "OTHER_CODE_SIGN_FLAGS=--keychain '$KEYCHAIN'"
       - name: Configure export options
         run: |
-          TEAM_ID=${{ secrets.XC_TEAM_ID }} DESTINATION=${{ XC_EXPORT_DESTINATION }} envsubst < ExportOptions.plist | sponge ExportOptions.plist
+          TEAM_ID=${{ XC_TEAM_ID }} DESTINATION=${{ XC_EXPORT_DESTINATION }} envsubst < ExportOptions.plist | sponge ExportOptions.plist
       - name: Export for App Store
         run: |
           $(which xcodebuild) -exportArchive -archivePath "$XC_ARCHIVE_PATH" -exportOptionsPlist "$XC_EXPORT_OPTIONS_FILE_PATH" -exportPath "$XC_EXPORT_PATH"
